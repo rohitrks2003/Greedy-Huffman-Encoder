@@ -236,11 +236,8 @@ string decode(string encodedString,string mappingString)
 
 signed main()
 {
-    // first we will take input as file
-    fstream  file;
-	file.open("C:/Users/rks20/Desktop/Greedy huffman encoder/input.txt", ios::out | ios::in );
-	string data;
-	getline(file,data);
+        string data;
+	getline(cin,data);
 	pair<string,string> encodedData=encode(data);
 	string encodedString=encodedData.first;
 	string mappingString=encodedData.second;
